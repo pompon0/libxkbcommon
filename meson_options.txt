@@ -46,7 +46,7 @@ option(
 option(
     'enable-tools',
     type: 'boolean',
-    value: true,
+    value: false,
     description: 'Enable building tools',
 )
 option(
@@ -58,18 +58,18 @@ option(
 option(
     'enable-docs',
     type: 'boolean',
-    value: true,
+    value: false,
     description: 'Enable building the documentation',
 )
 option(
     'enable-wayland',
     type: 'boolean',
-    value: true,
+    value: false,
     description: 'Enable support for Wayland utility programs (requires enable-tools)',
 )
 option(
     'enable-xkbregistry',
     type: 'boolean',
-    value: true,
+    value: false,
     description: 'Enable building libxkbregistry',
 )
