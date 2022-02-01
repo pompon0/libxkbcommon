@@ -2,6 +2,7 @@ cc_library(
   name = "config",
   hdrs = ["build/config.h"],
   strip_include_prefix = "build",
+  deps = ["@libxcb//:xcb"],
 )
 
 cc_library(
@@ -36,6 +37,7 @@ cc_library(
   deps = [
     ":config",
     ":src",
+    ":include",
   ],
 )
 
